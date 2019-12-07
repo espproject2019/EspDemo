@@ -1,0 +1,389 @@
+[
+{
+    "model": "app.borrowerinfo",
+    "pk": 1,
+    "fields": {
+        "firstName": "John",
+        "lastName": "White",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 2,
+    "fields": {
+        "firstName": "Ben",
+        "lastName": "White",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 3,
+    "fields": {
+        "firstName": "Mike",
+        "lastName": "Snow",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 4,
+    "fields": {
+        "firstName": "Anna",
+        "lastName": "Blake",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 5,
+    "fields": {
+        "firstName": "Marie",
+        "lastName": "Frank",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 6,
+    "fields": {
+        "firstName": "Nick",
+        "lastName": "Willson",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 7,
+    "fields": {
+        "firstName": "Craig",
+        "lastName": "White",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 8,
+    "fields": {
+        "firstName": "John",
+        "lastName": "White",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.borrowerinfo",
+    "pk": 9,
+    "fields": {
+        "firstName": "John",
+        "lastName": "White",
+        "email": "gtimokhina@gmail.com"
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 1,
+    "fields": {
+        "program": "30 years",
+        "amount": 100000.0,
+        "fico": 740,
+        "income": 100000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 2,
+    "fields": {
+        "program": "20 years",
+        "amount": 150000.0,
+        "fico": 700,
+        "income": 100000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 3,
+    "fields": {
+        "program": "30 years",
+        "amount": 100000.0,
+        "fico": 650,
+        "income": 60000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 4,
+    "fields": {
+        "program": "30 years",
+        "amount": 500000.0,
+        "fico": 600,
+        "income": 80000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 5,
+    "fields": {
+        "program": "15 years",
+        "amount": 100000.0,
+        "fico": 750,
+        "income": 100000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 6,
+    "fields": {
+        "program": "15 years",
+        "amount": 300000.0,
+        "fico": 800,
+        "income": 150000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 7,
+    "fields": {
+        "program": "30 years",
+        "amount": 170000.0,
+        "fico": 780,
+        "income": 80000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 8,
+    "fields": {
+        "program": "30 years",
+        "amount": 100000.0,
+        "fico": 770,
+        "income": 100000.0
+    }
+},
+{
+    "model": "app.loaninfo",
+    "pk": 9,
+    "fields": {
+        "program": "30 years",
+        "amount": 100000.0,
+        "fico": 740,
+        "income": 100000.0
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 1,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 2,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 3,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 4,
+    "fields": {
+        "address": "1234 Main St  Sunnyvale",
+        "country": "United States",
+        "state": "California",
+        "zip": "94306"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 5,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 6,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94305"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 7,
+    "fields": {
+        "address": "1234 Main St San Jose",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 8,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.propertyinfo",
+    "pk": 9,
+    "fields": {
+        "address": "1234 Main St Miami",
+        "country": "United States",
+        "state": "California",
+        "zip": "94301"
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 1,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": "2019-12-03",
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 1,
+        "loanInfo": 1,
+        "property": 1
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 2,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": "2019-12-03",
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 2,
+        "loanInfo": 2,
+        "property": 2
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 3,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": null,
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": "2019-12-03",
+        "borrower": 3,
+        "loanInfo": 3,
+        "property": 3
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 4,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": null,
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 4,
+        "loanInfo": 4,
+        "property": 4
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 5,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": null,
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 5,
+        "loanInfo": 5,
+        "property": 5
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 6,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": null,
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 6,
+        "loanInfo": 6,
+        "property": 6
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 7,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": null,
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 7,
+        "loanInfo": 7,
+        "property": 7
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 8,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": "2019-12-03",
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 8,
+        "loanInfo": 8,
+        "property": 8
+    }
+},
+{
+    "model": "app.loanrequests",
+    "pk": 9,
+    "fields": {
+        "userID": 123,
+        "dateCreated": "2019-12-03",
+        "dateApproved": "2019-12-03",
+        "dateSubmitted": "2019-12-03",
+        "dateDenied": null,
+        "borrower": 9,
+        "loanInfo": 9,
+        "property": 9
+    }
+}
+]

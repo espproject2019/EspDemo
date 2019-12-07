@@ -1,0 +1,110 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h3 class="page-header text-info">{{ response }}</h3>
+    <div class="col py-3 px-lg-5 "><a class="btn btn-outline-info" href="{% url 'loans' %}">
+      Back To Loans</a>
+    </div>
+  </div>
+  <div class="row">
+  <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+   <script language = "JavaScript">
+      $(document).ready(function() {
+         var chart = {
+            type: 'scatter',
+            zoomType: 'xy'
+         };
+         var title = {
+            text: 'Current Loan vs Approved and Denied'
+         };
+         var subtitle = {
+            text: ''
+         };
+         var xAxis = {
+            title: {
+               enabled: true,
+               text: 'Fico Score'
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
+         };
+         var yAxis = {
+            title: {
+               text: 'Yearly Income ($)'
+            }
+         };
+         var legend = {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 400,
+            y: 40,
+            floating: true,
+            backgroundColor: (
+               Highcharts.theme && Highcharts.theme.legendBackgroundColor) ||
+               '#FFFFFF',
+            borderWidth: 1
+         }
+         var plotOptions = {
+            scatter: {
+               marker: {
+                  radius: 5,
+                  states: {
+                     hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                     }
+                  }
+               },
+               states: {
+                  hover: {
+                     marker: {
+                        enabled: false
+                     }
+                  }
+               },
+               tooltip: {
+                  headerFormat: '<b>{series.name}</b><br>',
+                  pointFormat: '{point.x}, {point.y}'
+               }
+            }
+         };
+         var series = [
+            {
+               name: 'Approved',
+               color: 'rgb(0, 2, 4)',
+               data: {{approved}}
+
+            }, {
+               name: 'Denied',
+               color: 'rgb(0, 219, 4)',
+               data: {{denied}}
+             }, {
+                name: 'This loan',
+                color: 'rgb(0, 153, 255)',
+                data: {{current}}
+              }
+
+         ];
+
+         var json = {};
+         json.chart = chart;
+         json.title = title;
+         json.subtitle = subtitle;
+         json.legend = legend;
+         json.xAxis = xAxis;
+         json.yAxis = yAxis;
+         json.series = series;
+         json.plotOptions = plotOptions;
+         $('#container').highcharts(json);
+      });
+   </script>
+ </div>
+</div>
+</body>
+</html>
+
+{% endblock %}

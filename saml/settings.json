@@ -1,0 +1,30 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://127.0.0.1:8000/metadata/",
+        "assertionConsumerService": {
+            "url": "http://127.0.0.1:8000/index/?acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://127.0.0.1:8000/index/?sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+        "x509cert": "MIICbDCCAdWgAwIBAgIBADANBgkqhkiG9w0BAQ0FADBTMQswCQYDVQQGEwJ1czETMBEGA1UECAwKQ2FsaWZvcm5pYTEVMBMGA1UECgwMT25lbG9naW4gSW5jMRgwFgYDVQQDDA9pZHAuZXhhbXBsZS5jb20wHhcNMTQwOTIzMTIyNDA4WhcNNDIwMjA4MTIyNDA4WjBTMQswCQYDVQQGEwJ1czETMBEGA1UECAwKQ2FsaWZvcm5pYTEVMBMGA1UECgwMT25lbG9naW4gSW5jMRgwFgYDVQQDDA9pZHAuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOWA+YHU7cvPOrBOfxCscsYTJB+kH3MaA9BFrSHFS+KcR6cw7oPSktIJxUgvDpQbtfNcOkE/tuOPBDoech7AXfvH6d7Bw7xtW8PPJ2mB5Hn/HGW2roYhxmfh3tR5SdwN6i4ERVF8eLkvwCHsNQyK2Ref0DAJvpBNZMHCpS24916/AgMBAAGjUDBOMB0GA1UdDgQWBBQ77/qVeiigfhYDITplCNtJKZTM8DAfBgNVHSMEGDAWgBQ77/qVeiigfhYDITplCNtJKZTM8DAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBDQUAA4GBAJO2j/1uO80E5C2PM6Fk9mzerrbkxl7AZ/mvlbOn+sNZE+VZ1AntYuG8ekbJpJtG1YfRfc7EA9mEtqvv4dhv7zBy4nK49OR+KpIBjItWB5kYvrqMLKBa32sMbgqqUqeF1ENXKjpvLSuPdfGJZA3dNa/+Dyb8GGqWe707zLyc5F8m",
+        "privateKey": "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAOWA+YHU7cvPOrBOfxCscsYTJB+kH3MaA9BFrSHFS+KcR6cw7oPSktIJxUgvDpQbtfNcOkE/tuOPBDoech7AXfvH6d7Bw7xtW8PPJ2mB5Hn/HGW2roYhxmfh3tR5SdwN6i4ERVF8eLkvwCHsNQyK2Ref0DAJvpBNZMHCpS24916/AgMBAAECgYEA0wDXZPS9hKqMTNh+nnfONioXBjhA6fQ7GVtWKDxa3ofMoPyt7ejGL/Hnvcv13Vn02UAsFx1bKrCstDqVtYwrWrnmywXyH+o9paJnTmd+cRIjWU8mRvCrxzH5I/Bcvbp1qZoASuqZEaGwNjM6JpW2o3QTmHGMALcLUPfEvhApssECQQDy2e65E86HcFhi/Ta8TQ0odDCNbiWA0bI1Iu8B7z+NAy1D1+WnCd7w2u9U6CF/k2nFHCsvxEoeANM0z7h5T/XvAkEA8e4JqKmDrfdiakQT7nf9svU2jXZtxSbPiIRMafNikDvzZ1vJCZkvdmaWYL70GlDZIwc9ad67rHZ/n/fqX1d0MQJAbRpRsJ5gY+KqItbFt3UaWzlP8sowWR5cZJjsLb9RmsV5mYguKYw6t5R0f33GRu1wUFimYlBaR/5w5MIJi57LywJATO1a5uWX+G5MPewNxmsjIY91XEAHIYR4wzkGLz5z3dciS4BVCZdLD0QJlxPA/MkuckPwFET9uhYn+M7VGKHvUQJBANSDwsY+BdCGpi/WRV37HUfwLl07damaFbW3h08PQx8G8SuF7DpN+FPBcI6VhzrIWNRBxWprkgeGioKNfFWzSaM="
+    },
+    "idp": {
+        "entityId": "https://app.onelogin.com/saml/metadata/861aa19a-0c67-4f97-b269-4ab12e45552f",
+        "singleSignOnService": {
+            "url": "https://gryf-dev.onelogin.com/trust/saml2/http-post/sso/861aa19a-0c67-4f97-b269-4ab12e45552f",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://gryf-dev.onelogin.com/trust/saml2/http-redirect/slo/1034246",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIID0jCCArqgAwIBAgIUBUdd3qhMJ8nX5pCeovv21TUOpg8wDQYJKoZIhvcNAQEFBQAwQjENMAsGA1UECgwEU0pTVTEVMBMGA1UECwwMT25lTG9naW4gSWRQMRowGAYDVQQDDBFPbmVMb2dpbiBBY2NvdW50IDAeFw0xOTExMjcxODI1NDJaFw0yNDExMjcxODI1NDJaMEIxDTALBgNVBAoMBFNKU1UxFTATBgNVBAsMDE9uZUxvZ2luIElkUDEaMBgGA1UEAwwRT25lTG9naW4gQWNjb3VudCAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDod5J0jwoD/foNDpYpF+18KEF6aly/bsNflkmmInL5xl4Z3+iPTcbOxJG5DwW1hnOKPkDvE35eBzHan+9Zj3JvqmjLvv7MYZuQuH1twt+5MbqsigBUUlhqPjIe7oOuwJPl6UKSqzIFPbuy4IlrJixwpqGrXDFrOgKzLj4Fel7oxgzby+y/Lr2LP/NnEf8VfeNiufPwTIAdLRMFdkzyJgOR2PsJaTWMtARwckXJA0IuUkybZr3ADgtXw29e2yYlJXHKTjWumOWJH3hUfcBMJgRawH698KeP7ZVXQIle8Gnhv4StU+WkLGMyKtEHvyL3UhRII51LWmktGzfPRubU6VePAgMBAAGjgb8wgbwwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU227Xz5SAtCbyVVirigxWnNDWx0AwfQYDVR0jBHYwdIAU227Xz5SAtCbyVVirigxWnNDWx0ChRqREMEIxDTALBgNVBAoMBFNKU1UxFTATBgNVBAsMDE9uZUxvZ2luIElkUDEaMBgGA1UEAwwRT25lTG9naW4gQWNjb3VudCCCFAVHXd6oTCfJ1+aQnqL79tU1DqYPMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQUFAAOCAQEAiAKPirIFWR/EZ8FyUxMKc8gdD3nH8LrFxTb54nw8yo2JUYjlwxaU0kFXYop0fSjJQhngWsKjjcj4awe/5Z+wFfCDr5uS5U05vTgywTQjNA3ZM7Y1preQsHxFx4/kcR1MAL3XkjK6JMQ7QCk48fztsWHVOQIc+7S4u8NdoZUea1ZuIz5pISR/dZ6v0mQ6PirAfCiCb89A9Bz3sa+9awDFqG44MV+EZDDwQvO0Em7YeMRGUoOssRj+6V1eCvb3nIE16TZrHesF3X7ounlKzaQirmOb1GuLwm2pCAr1NLqaZdxWeDbypsz2nj4+6r0Igui212QpF0y5OKoX7j1ueHN2Yg=="
+    }
+}

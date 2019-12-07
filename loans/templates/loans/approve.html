@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+      <h1 class="page-header text-info">Loans to Approve</h1>
+      <div class="">
+        <form  method="post" action="submitForApproval">
+          {% csrf_token %}
+          <table class="table table-striped" width="600">
+            <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Loan Amount</th>
+              <th scope="col">Date Submitted</th>
+              <th scope="col">Loan Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for loan in loans %}
+              <tr>
+                <td>{{ loan.borrower.firstName}}&nbsp;{{loan.borrower.lastName}}</td>
+                <td>{{ loan.loanInfo.amount }}</td>
+                <td>{{ loan.dateSubmitted }}</td>
+                <td> {{loan.loanNumber}} </td>
+                <td>
+                 <!-- <u><input type='submit' name='loanNumber' value='{{loan.loanNumber}}'></u> -->
+                  <button type='submit' name='loanNumber' value='{{loan.loanNumber}}'>Submit</button>
+                </td>
+              </tr>
+            {% endfor %}
+            <tbody>
+            </table>
+
+        </form>
+      </div>
+    </div>
+
+{% endblock %}

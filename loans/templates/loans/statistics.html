@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Statistics</h2>
+<div class="container">
+<div class="row">
+    <div class="col">
+      <div id = "container" style = "width: 500px; height: 500px; margin: 0 auto"></div>
+        <script language = "JavaScript">
+           $(document).ready(function() {
+              var chart = {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false
+              };
+              var title = {
+                 text: 'Loans Data Statistics'
+              };
+              var tooltip = {
+                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+              };
+              var plotOptions = {
+                 pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+
+                    dataLabels: {
+                       enabled: true,
+                       format: '<b>{point.name}%</b>: {point.percentage:.1f} %',
+                       style: {
+                          color: (Highcharts.theme && Highcharts.theme.contrastTextColor)||
+                          'black'
+                       }
+                    }
+                 }
+              };
+              var series = [{
+                 type: 'pie',
+                 name: 'Approved, Denied, In Process',
+                 data: [
+                    ['In Process', {{chartdata.2}}],
+                    ['Approved', {{chartdata.0}}],
+                    {
+                       name: 'Denied',
+                       y: {{chartdata.1}},
+                       sliced: true,
+                       selected: true
+                    }]
+              }];
+              var json = {};
+              json.chart = chart;
+              json.title = title;
+              json.tooltip = tooltip;
+              json.series = series;
+              json.plotOptions = plotOptions;
+              $('#container').highcharts(json);
+           });
+        </script>
+    </div>
+    <div class="col">
+    <div id = "container1" style = "width: 500px; height: 500px; margin: 0 auto"></div>
+     <script language = "JavaScript">
+        $(document).ready(function() {
+           var chart = {
+              type: 'scatter',
+              zoomType: 'xy'
+           };
+           var title = {
+              text: 'All Data Scatter Plot'
+           };
+           var subtitle = {
+              text: ''
+           };
+           var xAxis = {
+              title: {
+                 enabled: true,
+                 text: 'Fico Score'
+              },
+              startOnTick: true,
+              endOnTick: true,
+              showLastLabel: true
+           };
+           var yAxis = {
+              title: {
+                 text: 'Yearly Income ($)'
+              }
+           };
+           var legend = {
+              layout: 'vertical',
+              align: 'left',
+              verticalAlign: 'top',
+
+              floating: true,
+              backgroundColor: (
+                 Highcharts.theme && Highcharts.theme.legendBackgroundColor) ||
+                 '#FFFFFF',
+              borderWidth: 1
+           }
+           var plotOptions = {
+              scatter: {
+                 marker: {
+                    radius: 5,
+                    states: {
+                       hover: {
+                          enabled: true,
+                          lineColor: 'rgb(100,100,100)'
+                       }
+                    }
+                 },
+                 states: {
+                    hover: {
+                       marker: {
+                          enabled: false
+                       }
+                    }
+                 },
+                 tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x}, {point.y}'
+                 }
+              }
+           };
+           var series = [
+              {
+                 name: 'Approved',
+                 color: 'rgb(0, 2, 4)',
+                 data: {{approveddata}}
+
+              }, {
+                 name: 'Denied',
+                 color: 'rgb(0, 219, 4)',
+                 data: {{denieddata}}
+               }, {
+                  name: 'In Processed',
+                  color: 'rgb(0, 153, 255)',
+                  data: {{inprocess}}
+                }
+           ];
+
+           var json = {};
+           json.chart = chart;
+           json.title = title;
+           json.subtitle = subtitle;
+           json.legend = legend;
+           json.xAxis = xAxis;
+           json.yAxis = yAxis;
+           json.series = series;
+           json.plotOptions = plotOptions;
+           $('#container1').highcharts(json);
+        });
+     </script>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
